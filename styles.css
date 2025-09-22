@@ -1,48 +1,104 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
-}
-
-header {
-  background: #111;
-  color: #fff;
-  padding: 10px 20px;
-}
-
-header nav ul {
-  list-style: none;
+  background: #f9f9f9;
+  color: #333;
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero {
-  background: #f4f4f4;
-  padding: 60px 20px;
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #0066ff, #00ccff);
+  color: white;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
-.hero .btn {
-  background: #0077ff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Sección intro */
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  color: #0066ff;
+  margin-bottom: 1rem;
+}
+
+/* Botones */
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-primary, .btn-secondary {
   text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
 }
 
-section {
-  padding: 40px 20px;
+/* Botón principal */
+.btn-primary {
+  background: #0066ff;
+  color: white;
 }
 
+.btn-primary:hover {
+  background: #0047b3;
+}
+
+/* Botón secundario */
+.btn-secondary {
+  background: #eeeeee;
+  color: #333;
+  border: 2px solid #0066ff;
+}
+
+.btn-secondary:hover {
+  background: #0066ff;
+  color: white;
+}
+
+/* Footer */
 footer {
-  text-align: center;
-  padding: 10px;
   background: #222;
-  color: #fff;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
